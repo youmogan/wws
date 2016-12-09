@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<script type="text/javascript" src="js/jquery1.42.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide2.js"></script>
+<!--<script src="#/ajaxjs/jquery.min.js"></script>-->
+<link rel="stylesheet" href="css/index.css" />
+<link rel="stylesheet" href="css/lb.css" />
+<link rel="stylesheet" type="text/css" href="css/tutu.css"/>
+</head>
+<body>
+<div id="box">
+		<div id="logo">
+			<!--<p><img src="images/489654695590284433.jpg" width="100" height="100" style="float:right; margin-top: 320px; margin-right: 60px;"></p>
+			<p><img src="images/185292421516825748.jpg" width="100" height="100" style="margin-top: 160px; margin-left: 20px;"></p>
+			<p><img src="images/871183076909095340.jpg" width="100" height="100" style="margin-left: 150px; margin-top: 10px;"></p>-->
+		</div>
+	<div id="nav">
+		<div class="menu">
+	   		<ul>
+		   		<li><a href="1.html" target="_blank">Introduction.</a></li>
+		   		<li><a href="2.html" target="_blank">Picture.</a></li>
+		   		<li><a href="3.html" target="_blank">SWOT&Needs </a></li>
+			   	<li><a href="4.html" target="_blank">Video</a></li>
+				<li><a href="5.html" target="_blank">Reference</a></li>
+	   		</ul>
+   		</div>
+	</div>
+
+		<!--<div id="diyi">
+					<video src="images/sp.mp4" controls="controls" preload="metadata" id="video"></video>
+		</div>-->
+	
+			<div class="slider">
+			  <div class="bd">
+			    <ul>
+			      <li><a ><img src="images/1.jpg" /></a></li>
+			      <li><a ><img src="images/2.jpg" /></a></li>
+			      <li><a ><img src="images/3.jpg" /></a></li>
+			      <li><a ><img src="images/4.jpg" /></a></li>
+				  <li><a ><img src="images/5.jpg" /></a></li>
+				  <li><a ><img src="images/6.jpg" /></a></li>
+				  <li><a ><img src="images/7.png" /></a></li>
+				  <li><a ><img src="images/8.jpg" /></a></li>
+				  <li><a ><img src="images/9.jpg" /></a></li>
+				  <li><a ><img src="images/10.jpg" /></a></li>
+				  <li><a ><img src="images/11.jpg" /></a></li>
+				  <li><a ><img src="images/12.jpg" /></a></li>
+				  <li><a ><img src="images/13.jpg" /></a></li>
+			    </ul>
+			  </div>
+			  <div class="pnBtn prev"> <span class="blackBg"></span> <span class="arrow"></span> </div>
+			  <div class="pnBtn next"> <span class="blackBg"></span> <span class="arrow"></span> </div>
+			</div>
+
+<!--<div id="tutu">
+	<img src="images/b.png">
+	<img src="images/c.png">
+	<img src="images/a.png">
+</div>-->
+
+<div class="sec bnspic">
+	<div class="big_pic">
+		<ul>
+		<li class="on"><a href="#"><img src="images/b.png" title="" /></a></li>
+		<li><a href="#"><img src="images/c.png" title="" /></a></li>
+		<li><a href="#"><img src="images/a.png" title="" /></a></li>
+		</ul>
+	</div><!-- /big_pic -->
+	<div class="small_pic clearfix">
+		<ul>
+			<li class="on"><a href="#"><img src="images/b.png" alt="" /></a></li>
+			<li><a href="#"><img src="images/c.png" alt="" /></a></li>
+			<li><a href="#"><img src="images/a.png" alt="" /></a></li>
+		</ul>
+	</div><!-- /small_pic -->
+	
+	<p id="wm">我们</p>
+</div>
+<script>
+	$(".small_pic li").mouseover(function(){
+		$(this).addClass("on").siblings().removeClass("on");
+		var preNumber=$(this).prevAll().size()+1;
+		$(".big_pic li").removeClass("on");
+		$(".big_pic li:nth-child("+preNumber+")").addClass("on");
+	});
+</script>
+			<div id="wei">
+				<div id="audio">
+	          		<audio src="images/Faded.mp3" controls="controls" autoplay="autoplay" loop="loop"></audio>
+	         	</div>
+	</div>
+	</div>
+
+
+		<script type="text/javascript">
+		/* 把最后一个放到第一个前面，然后通过外层ul{margin-left:-630px !important; }来显示第一个 */
+		jQuery(".slider .bd li").first().before( jQuery(".slider .bd li").last() );
+		/* 控制左右按钮显示 */
+		jQuery(".slider .pnBtn").hover(function(){ jQuery(this).find(".arrow").show() },function(){ jQuery(this).find(".arrow").hide() });
+		/* 调用SuperSlide */
+		jQuery(".slider").slide({ mainCell:".bd ul", effect:"leftLoop",  autoPlay:true, vis:3, mouseOverStop:false });
+		</script>
+</body>
+</html>

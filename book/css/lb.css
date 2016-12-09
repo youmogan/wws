@@ -1,0 +1,14 @@
+	a:hover{ color:#1974A1;  }
+	.slider{ width:630px;  height:338px; padding:0 130px;  margin:0 auto;  position:relative; overflow:hidden; background:#000; top:50px; }
+	.slider .bd{ position:absolute; left:0; top:0; }
+	.slider .bd li{ overflow:hidden; }
+	.slider .bd li img{ display:block; width:630px; height:338px;    }
+	.slider .tempWrap{ padding:0 130px !important; /* 强制遮罩层显示2侧各130px */   }
+	.slider .bd ul{ margin-left:-630px !important;  }
+	.slider .pnBtn{ position:absolute; top:0; width:130px; height:338px; cursor:pointer;   }
+	.slider .prev{ left:0;  }
+	.slider .next{ right:0; }
+	.slider .pnBtn .blackBg{ display:block;  position:absolute; left:0; top:0; width:100%; height:338px; background:#000; filter:alpha(opacity=50);opacity:0.5;}
+	.slider .pnBtn .arrow{ display:none; position:absolute; top:0; z-index:1; width:32px; height:338px; _filter:alpha(opacity=70); }
+	.slider .prev .arrow{ left:0; background-image: url(../images/left.png); 0 center no-repeat;   }
+	.slider .next .arrow{ right:0; background-image: url(../images/right.png); 0 center no-repeat;  }
