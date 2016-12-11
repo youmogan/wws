@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	<title>home</title>
+	<script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/myone.css">
+	<script type="text/javascript">
+
+$(function () {
+
+	//轮播自动播放
+	$('#myCarousel').carousel({
+		//自动4秒播放
+		interval : 4000,
+	});
+	//设置文字垂直居中
+	$('.text').eq(0).css('margin-top', ($('.auto').eq(0).height() - $('.text').eq(0).height()) / 2 + 'px');
+	$(window).resize(function () {
+		$('.text').eq(0).css('margin-top', ($('.auto').eq(0).height() - $('.text').eq(0).height()) / 2 + 'px');
+	});
+
+	$('.text').eq(1).css('margin-top', ($('.auto').eq(1).height() - $('.text').eq(1).height()) / 2 + 'px');
+	$(window).resize(function () {
+		$('.text').eq(1).css('margin-top', ($('.auto').eq(1).height() - $('.text').eq(1).height()) / 2 + 'px');
+	});
+
+
+	//设置垂直居中
+	/*$('.carousel-control').css('line-height', $('.carousel-inner img').height() + 'px');
+	$(window).resize(function () {
+		var $height = $('.carousel-inner img').eq(0).height() || 
+					  $('.carousel-inner img').eq(1).height() || 
+					  $('.carousel-inner img').eq(2).height();
+		$('.carousel-control').css('line-height', $height + 'px');
+	});
+*/
+});
+
+</script>
+<style>
+.media-left img:hover{width:300px;height:240px}
+
+
+</style>
+</head>
+<body class="modal-footer">
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span>HOME</a></li>
+				<li><a href="remai.html" target="blank"><span class="glyphicon glyphicon-list"></span> ABOUT US</a></li>
+				<li><a href="women.html"><span class="glyphicon glyphicon-question-sign"></span>ICBC HISTORY</a></li>
+			</ul>	
+		</div>
+	</div>
+</nav>
+<div id="myCarousel" class="carousel slide">
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>
+	<div class="carousel-inner">
+		<div class="item active" >
+			<img src="img/pin1.jpg" style="width:1200px;height:400px" />
+		</div>
+		<div class="item" >
+			<img src="img/icbc3.jpg"  style="width:1200px;height:400px" />
+		</div>
+		<div class="item" >
+			<img src="img/ICBC1.jpg" style="width:1200px;height:400px" />
+		</div>
+	</div>
+	<a href="#myCarousel" data-slide="prev" class="carousel-control left">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+	</a>
+	<a href="#myCarousel" data-slide="next" class="carousel-control right">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</a>
+
+</div>
+<div class="tab1">
+	<div class="container">
+		<h2 class="tab-h2">「Industrial and commercial bank」</h2>
+		<p class="tab-p"><a href="http://www.tudou.com/programs/view/brz30KWw1BA/">video</a></p>
+		<div class="row">
+			<div class="col-md-6 col">
+				<div class="media">
+					<div class="media-left">
+						<a href="#"><img src="img/4.png" class="media-object" style="width:240px;height:180px;"></a>
+					</div>
+					<div class="media-body">
+						<h4>SWOT-S</h4>
+						<p>1: Smart reward system.(Staffs’ salary is concerned with their working positivity)
+
+2: Implementing creativity test in recruiting and interview.
+
+3.Always have meetings(always make decisions in group instead of individual decision making)</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col">
+				<div class="media">
+					<div class="media-left">
+						<a href="#"><img src="img/5.png" class="media-object" style="width:240px;height:180px;"></a>					</div>
+					<div class="media-body">
+						<h4>SWOT-W</h4>
+						<p>1：Communication and prestige problems<span style="color:#F00">(NEED)</span><br/>
+
+2：The staffs’ positivity problems.<span style="color:#F00">(NEED)</span><br/>
+
+3： Job-hopping problems.<span style="color:#F00">(NEED)</span><br/>	</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col">
+				<div class="media">
+					<div class="media-left">
+						<a href="#"><img src="img/6.png" class="media-object" style="width:240px;height:180px;"></a>
+					</div>
+					<div class="media-body">
+						<h4>SWOT-O</h4>
+						<p>1:Chinese government gives ICBC the power of macro-control.(Based on  chapter 6) 
+
+2: ICBC is the biggest bank in China, so it has the biggest client base and most people willing to trust it.(logos, ethos and pathos)
+
+3: Based on the law, ICBC must show its results announcement quarterly. (Social facilitation)</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col">
+				<div class="media">
+					<div class="media-left">
+						<a href="#"><img src="img/7.png" class="media-object" style="width:240px;height:180px;"></a>
+					</div>
+					<div class="media-body">
+						<h4>SWOT-T</h4>
+						<p>1: Because of the ex chairman JiangJianQing is too successful, there are a lot of voice that query YiHuiMan ‘s leadership.
+2: Internet era is coming; traditional banking model should be changed. But there are still some people think ICBC should keep doing the old things. 
+3: The stress of competition from other banks. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="tab2">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-6 tab2-img">
+				<img src="img/456.gif" class="auto img-responsive center-block" alt="">
+			</div>
+			<div class="text col-md-6 col-sm-6 tab2-text">
+				<h3>Humor</h3>
+				<p>Did you laugh！</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="shiyi">
+
+  <h3><strong>Conclusion:</strong></h3>
+  <h4><strong>In this Web, we reported that the 3 needs about leadership in ICBC. All in all,</br> ICBC is a successful company which is developing fast. But there are still some serious issues inside deeply of the organization. </strong></h4> <br/>
+<h4><strong>Reference：
+ICBC Asia. (2010). History. ICBC Asia. 
+  Retrieved from: http://www.icbc.com.cn/icbc/海外分行/工银亚洲/en/about_us/profile/history/
+ 
+Lucas Chow. (N.D). The MediaCorp story. Asian Leadership What Works. PP. 131-134.
+ 
+Katzenbach, and Smith. (2003).Joining Together. P. 20.
+ 
+XueQing Jiang. (2016). A-share commercial banks restructure, shrin workforce. China daily
+USA.
+Retrieved from: http://usa.chinadaily.com.cn/epaper/2016-09/06/content_26715694.htm. P.16.
+ 
+Sabrina Parsons. (2014). Why I Tell My Employees to Bring Their Kids to Work. Palo Alto Software. Harvard Business Review.
+Retrieved from: https://hbr.org/2014/04/why-i-tell-my-employees-to-bring-their-kids-to-work </strong></h4>
+</div>
+
+<footer id="footer">
+	<div class="container">
+		<audio src="img/Bruno Mars - The Lazy Song - 加长版.mp3" controls style="width:980px;" ></audio>
+	</div>
+</footer>
+
+</body>
+</html>
